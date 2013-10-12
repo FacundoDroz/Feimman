@@ -3,7 +3,7 @@ session_start();
 
 echo '<html>
     <head>
-        <title>Test</title>
+        <title>Feimman</title>
         <meta charset="utf-8" />
         <link href="styles/index.css" type="text/css" rel="stylesheet"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
@@ -13,7 +13,7 @@ echo '<html>
     <body>
         <div id="header">
             
-            <div id="apptitle"> APP TITLE </div>
+            <div id="apptitle"> FEIMMAN </div>
             
         </div>
         <!-- End of header -->
