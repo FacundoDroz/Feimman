@@ -1,9 +1,8 @@
-<html>
+<!DOCTYPE HTML SYSTEM>
     <head>
         <title>Feimman</title>
-        <meta charset="utf-8" />
-        <link href="styles/index.css" type="text/css" rel="stylesheet"/>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <link href="styles/index.css" type="text/css" rel="stylesheet">
     </head>
 
     <body>
