@@ -30,7 +30,7 @@ echo '<html>
             </div>';
             echo "Segun la RAE: <br>";
             echo "<a href='" . $_SESSION['result'] . "'>" . $_SESSION['result'] . "</a>";
-            '<!-- End of false_content -->
+         echo '<!-- End of false_content -->
 </body>
 </html>';
 ?>
