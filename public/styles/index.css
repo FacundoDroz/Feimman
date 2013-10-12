@@ -1,0 +1,55 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#header{
+    background: #6567a5;
+    height: 200px;
+    width: 100%;
+}
+
+#apptitle{
+    color: white;
+    font-size: 22px;
+    position: relative;
+    top: 45%;
+    left: 45%;
+}
+
+#pcontent{
+    height: 100%;
+    margin: 0 auto;
+    width: 950px;
+}
+
+#true_word{
+    height: 30px;
+    padding-left: 20px;
+    width: 400px;
+}
+
+#true_content{
+    display: none;
+}
+
+#submit{
+    background: #6567a5;
+    border-radius: 15px;
+    height: 32px;
+    width: 100px;
+}
+
+#submit:hover{
+    background: white;
+    color: #6567a5;
+}
+
+#false_word{
+    border-radius: 15px;
+    height: 30px;
+    outline: 0px;
+    width: 300px;
+}

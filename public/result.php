@@ -1,15 +1,19 @@
-<html>
+<?php
+session_start();
+
+echo '<html>
     <head>
-        <title>Feimman</title>
+        <title>Test</title>
         <meta charset="utf-8" />
         <link href="styles/index.css" type="text/css" rel="stylesheet"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        
     </head>
 
     <body>
         <div id="header">
             
-            <div id="apptitle"> FEIMMAN </div>
+            <div id="apptitle"> APP TITLE </div>
             
         </div>
         <!-- End of header -->
@@ -24,15 +28,10 @@
                     <input type="text" id="false_word" name="word">
                     <input type="submit" value="Corroborar" id="submit">
                 </form>
-            </div>
-            <!-- End of false_content -->
-            
-            <div id="true_content">
-                <input type="text" id="true_word">
-            </div>
-            <!-- End of false_content -->
-            
-        </div>
-        <!-- End of pcontent -->
-    </body>
-</html>
+            </div>';
+            echo "Segun la RAE: <br>";
+            echo "<a href='" . $_SESSION['result'] . "'>" . $_SESSION['result'] . "</a>";
+            '<!-- End of false_content -->
+</body>
+</html>';
+?>
