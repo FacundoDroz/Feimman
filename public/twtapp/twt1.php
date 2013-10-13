@@ -29,16 +29,19 @@ $twitter = new TwitterAPIExchange($settings);
 $string = json_decode($twitter->setGetfield($getfield)
 ->buildOauth($url, $requestMethod)
 ->performRequest(),$assoc = TRUE);
-//echo "<pre>";
-//print_r($string);
+/*echo "<pre>";
+print_r($string);
+echo "</pre>";
+*/
 
 foreach($string['statuses'] as $items)
     {
 		echo "<hr>";
-		echo "<span class=\"username js-action-profile-name\">" . $items['user']{'screen_name'} . "</span><br>";
-        echo "<span class=\"js-tweet-text tweet-text\">"        . $items['text'] .  "</span><br>";
-		echo "<span class=\"stream-item-footer\">"              . $items['source'] .  "</span>, ";
-		echo "<span class=\"time\">"                            . $items['created_at'] .  "</span><br>";
+		echo "<img class=\"avatar1\" src=\""                   . $items['user']{'profile_image_url'}. "\">";
+		echo "<span class=\"username js-action-profile-name\">". $items['user']{'screen_name'}      . "</span><br>";
+        echo "<span class=\"js-tweet-text tweet-text\">"       . $items['text']                     . "</span><br>";
+		echo "<span class=\"stream-item-footer\">"             . $items['source']                   . "</span>, ";
+		echo "<span class=\"time\">"                           . $items['created_at']               . "</span><br>";
     }
 
 /*
@@ -51,7 +54,7 @@ foreach($string as $items)
 		echo $items['source']."<br />";
     }
 	*/
-//    echo "</pre>";
+
 ?>
 
 </body>

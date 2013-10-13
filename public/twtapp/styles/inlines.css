@@ -4,6 +4,18 @@ size: 100px:
 
 }
 
+.avatar1{
+margin-right: 15px;
+margin-left: 10px;
+}
+
+.tweet-text{
+margin-left: 73px;
+}
+
+.stream-item-footer{
+font-style:italic;
+}
 
 .btn-link,
 .btn-link:focus,
