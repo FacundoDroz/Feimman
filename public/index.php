@@ -1,16 +1,43 @@
 <!DOCTYPE HTML SYSTEM>
+<?php
+//Always place this code at the top of the Page
+session_start();
+if (isset($_SESSION['id'])) {
+    // Redirection to login page twitter or facebook
+    header("location: home.php");//home.php
+}
+
+if (array_key_exists("login", $_GET)) {
+    $oauth_provider = $_GET['oauth_provider'];
+    if ($oauth_provider == 'twitter') {
+        header("Location: login-twitter.php");
+    } else if ($oauth_provider == 'facebook') {
+        header("Location: login-facebook.php");
+    }
+}
+?>
     <head>
         <title>Feimman</title>
         <meta charset="utf-8">
+<<<<<<< HEAD
         <link href="/styles/index.css" type="text/css" rel="stylesheet">
 		
+=======
+        <link href="styles/index.css" type="text/css" rel="stylesheet">
+>>>>>>> f86f2e8a1ee082eb7c41d4713c24d105b394f42a
     </head>
 
     <body>
         <div id="header">
             
             <div id="apptitle"> FEIMMAN </div>
-            
+            <div id="buttons">
+<h1>Twitter Facebook Login </h1>
+    <a href="?login&oauth_provider=twitter"><img src="images/tw_login.png"></a>&nbsp;&nbsp;&nbsp;
+   
+    <br />
+   
+</div>
         </div>
         <!-- End of header -->
         

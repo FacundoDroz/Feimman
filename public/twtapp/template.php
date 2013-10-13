@@ -2,11 +2,20 @@
     <head>
         <title>Prueba template</title>
         <meta charset="utf-8">
+		<link href="styles/inlines.css" type="text/css" rel="stylesheet">
         <link href="styles/t1_core.bundle.css" type="text/css" rel="stylesheet">
 		<link href="styles/t1_more.bundle.css" type="text/css" rel="stylesheet">
+
     </head>
 
 <body>
+
+
+
+<!--
+<div class="test1"> ehhh </div>
+-->
+
 <div class="stream-item-header">
   <img class="avatar js-action-profile-avatar" src="http://si0.twimg.com/profile_images/378800000401513503/4baacee0c2f6ee3b2972967c3b69d923_normal.jpeg" alt=""  />
   <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="/Albaurceira3" data-user-id="813348901">
@@ -36,36 +45,6 @@
 </div>
 
 
-
-
-<div class="welcome-faux-tweet-stream js-welcome-faux-tweet-stream">
-        <div class="unfocusable-stream-item stream-item js-intro-tweet" ><!-- style="display: none;"-->
-          <div class="tweet js-unclickable-tweet unclickable-tweet">
-            <div class="content">
-              <div class="stream-item-header">
-                <span class="account-group js-account-group js-action-profile">
-                  <span class="avatar-group" >
-                    <span class="avatar welcome-teacher"/>
-                    <span class="avatar-well size48"></span>
-                  </span>
-                  <strong class="fullname">The Twitter Teacher</strong>
-                </span>
-                <small class="time">
-                  1 min
-                </small>
-              </div>
-              <p>This is a Tweet. Tweets are short messages that have up to 140 characters and can contain links like <a>http://twitter.com</a>.</p>
-            </div>
-            
-          </div>
-        </div>
-</div>
-
-<div class="expanded-content js-tweet-details-dropdown">
-    
-
-    
-</div>
 
 
 
