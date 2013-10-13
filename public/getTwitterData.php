@@ -15,9 +15,9 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 // Let's get the user's info
     $user_info = $twitteroauth->get('account/verify_credentials');
 // Print user's info
-    echo '<pre>';
-    print_r($user_info);
-    echo '</pre><br/>';
+    echo '<h1>';
+    print_r($user_info->screen_name);
+    echo '</h1><br/>';
     if (isset($user_info->error)) {
         // Something's wrong, go back to square 1  
         header('Location: login-twitter.php');
