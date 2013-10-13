@@ -3,6 +3,7 @@
         <title>Feimman</title>
         <meta charset="utf-8">
         <link href="/styles/index.css" type="text/css" rel="stylesheet">
+		
     </head>
 
     <body>
@@ -29,7 +30,7 @@
             <div id="true_content">
                 <input type="text" id="true_word">
             </div>
-            <!-- End of false_content -->
+            <!-- End of true_content -->
             
         </div>
         <!-- End of pcontent -->
