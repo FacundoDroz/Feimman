@@ -1,3 +1,14 @@
+<!DOCTYPE HTML SYSTEM>
+    <head>
+        <title>Prueba template</title>
+        <meta charset="utf-8">
+		<link href="styles/inlines.css" type="text/css" rel="stylesheet">
+        <link href="styles/t1_core.bundle.css" type="text/css" rel="stylesheet">
+		<link href="styles/t1_more.bundle.css" type="text/css" rel="stylesheet">
+
+    </head>
+
+<body>
 <?php
 require_once('TwitterAPIExchange.php');
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
@@ -13,21 +24,21 @@ $url = "https://api.twitter.com/1.1/search/tweets.json";
 
 $requestMethod = "GET";
 //$getfield = '?screen_name=apabl&count=5';
-$getfield = '?count=4&q=sol';
+$getfield = '?count=6&q=haci';
 $twitter = new TwitterAPIExchange($settings);
 $string = json_decode($twitter->setGetfield($getfield)
 ->buildOauth($url, $requestMethod)
 ->performRequest(),$assoc = TRUE);
-echo "<pre>";
+//echo "<pre>";
 //print_r($string);
 
 foreach($string['statuses'] as $items)
     {
 		echo "<hr>";
-		echo $items['user']{'screen_name'}."<br />";
-        echo $items['created_at']."<br />";
-        echo $items['text']."<br />";
-		echo $items['source']."<br />";
+		echo "<span class=\"username js-action-profile-name\">" . $items['user']{'screen_name'} . "</span><br>";
+        echo "<span class=\"js-tweet-text tweet-text\">"        . $items['text'] .  "</span><br>";
+		echo "<span class=\"stream-item-footer\">"              . $items['source'] .  "</span>, ";
+		echo "<span class=\"time\">"                            . $items['created_at'] .  "</span><br>";
     }
 
 /*
@@ -40,5 +51,7 @@ foreach($string as $items)
 		echo $items['source']."<br />";
     }
 	*/
-    echo "</pre>";
+//    echo "</pre>";
 ?>
+
+</body>
