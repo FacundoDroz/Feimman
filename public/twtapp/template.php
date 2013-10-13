@@ -1,17 +1,26 @@
+<!DOCTYPE HTML SYSTEM>
+    <head>
+        <title>Prueba template</title>
+        <meta charset="utf-8">
+        <link href="styles/t1_core.bundle.css" type="text/css" rel="stylesheet">
+		<link href="styles/t1_more.bundle.css" type="text/css" rel="stylesheet">
+    </head>
 
+<body>
 <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="/Albaurceira3" data-user-id="813348901">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000401513503/4baacee0c2f6ee3b2972967c3b69d923_normal.jpeg" alt="">
+  <img class="avatar js-action-profile-avatar" src="http://si0.twimg.com/profile_images/378800000401513503/4baacee0c2f6ee3b2972967c3b69d923_normal.jpeg" alt=""  />
+  <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="/Albaurceira3" data-user-id="813348901">
+    
     <strong class="fullname js-action-profile-name show-popup-with-id">Alba Urceira</strong>
     <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>Albaurceira3</b></span>
     
   </a>
 
-        <small class="time">
+<small class="time">
     <a href="/Albaurceira3/status/389164365720875008" class="tweet-timestamp js-permalink js-nav" title="8:03 PM - 12 oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381618989" data-long-form="true">1min</span></a>
 </small>
 
-      </div>
+</div>
 
       
 
@@ -27,3 +36,38 @@
 </div>
 
 
+
+
+<div class="welcome-faux-tweet-stream js-welcome-faux-tweet-stream">
+        <div class="unfocusable-stream-item stream-item js-intro-tweet" ><!-- style="display: none;"-->
+          <div class="tweet js-unclickable-tweet unclickable-tweet">
+            <div class="content">
+              <div class="stream-item-header">
+                <span class="account-group js-account-group js-action-profile">
+                  <span class="avatar-group" >
+                    <span class="avatar welcome-teacher"/>
+                    <span class="avatar-well size48"></span>
+                  </span>
+                  <strong class="fullname">The Twitter Teacher</strong>
+                </span>
+                <small class="time">
+                  1 min
+                </small>
+              </div>
+              <p>This is a Tweet. Tweets are short messages that have up to 140 characters and can contain links like <a>http://twitter.com</a>.</p>
+            </div>
+            
+          </div>
+        </div>
+</div>
+
+<div class="expanded-content js-tweet-details-dropdown">
+    
+
+    
+</div>
+
+
+
+
+</body>

@@ -32,8 +32,6 @@ $string = json_decode($twitter->setGetfield($getfield)
 ->buildOauth($url, $requestMethod)
 ->performRequest(),$assoc = TRUE);
 
-var_dump($string);
-die();
 foreach($string as $items)
     {
         echo "Time and Date of Tweet: ".$items['created_at']."<br />";

@@ -2,7 +2,7 @@
     <head>
         <title>Feimman</title>
         <meta charset="utf-8">
-        <link href="styles/index.css" type="text/css" rel="stylesheet">
+        <link href="/styles/index.css" type="text/css" rel="stylesheet">
     </head>
 
     <body>
